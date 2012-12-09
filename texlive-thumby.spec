@@ -54,3 +54,16 @@ class, and also requires PerlTeX and tikz/.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1-2
++ Revision: 756841
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.1-1
++ Revision: 719738
+- texlive-thumby
+- texlive-thumby
+- texlive-thumby
+
