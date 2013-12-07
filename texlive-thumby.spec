@@ -6,7 +6,7 @@
 # catalog-version 0.1
 Name:		texlive-thumby
 Version:	0.1
-Release:	3
+Release:	4
 Summary:	Create thumb indexes for printed books
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/thumby
