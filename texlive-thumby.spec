@@ -1,18 +1,12 @@
-# revision 16736
-# category Package
-# catalog-ctan /macros/latex/contrib/thumby
-# catalog-date 2010-01-17 11:28:50 +0100
-# catalog-license gpl3
-# catalog-version 0.1
 Name:		texlive-thumby
-Version:	0.1
-Release:	11
+Version:	16736
+Release:	1
 Summary:	Create thumb indexes for printed books
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/thumby
 License:	GPL3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/thumby.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/thumby.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/thumby.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/thumby.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -29,12 +23,12 @@ by the user. The package is designed to work with the memoir
 class, and also requires PerlTeX and tikz/.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -47,23 +41,10 @@ class, and also requires PerlTeX and tikz/.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1-2
-+ Revision: 756841
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.1-1
-+ Revision: 719738
-- texlive-thumby
-- texlive-thumby
-- texlive-thumby
-
