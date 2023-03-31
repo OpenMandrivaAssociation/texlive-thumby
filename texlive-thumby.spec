@@ -1,6 +1,6 @@
 Name:		texlive-thumby
 Version:	16736
-Release:	1
+Release:	2
 Summary:	Create thumb indexes for printed books
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/thumby
