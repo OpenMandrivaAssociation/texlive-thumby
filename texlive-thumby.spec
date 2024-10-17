@@ -3,7 +3,7 @@ Version:	16736
 Release:	2
 Summary:	Create thumb indexes for printed books
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/thumby
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/thumby
 License:	GPL3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/thumby.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/thumby.doc.r%{version}.tar.xz
